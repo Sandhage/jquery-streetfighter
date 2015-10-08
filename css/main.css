@@ -14,9 +14,6 @@ body {
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
 	background-repeat: no-repeat;
 }
-* {
-	outline: red 1px solid;
-}
 
 /* Ryu Images and Animation */
 .ryu {
@@ -47,8 +44,8 @@ body {
 	height: 90px;
 	float: left;
 	position: absolute;
-	z-index: 10;
 	top: 170px;
 	left: 620px;
-	display: none; 
+	display: none;
+	z-index: 10;
 }
