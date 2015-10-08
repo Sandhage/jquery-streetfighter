@@ -1,4 +1,4 @@
-/* Layout and background */
+/* Layout and Background */
 body {
 	background-color: black;
 }
@@ -11,6 +11,12 @@ body {
 	z-index: 1;
 	background-color: white;
 }
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+	background-repeat: no-repeat;
+}
+* {
+	outline: red 1px solid;
+}
 
 /* Ryu Images and Animation */
 .ryu {
@@ -21,18 +27,26 @@ body {
 	width: 658px;
 	height: 494px;
 }
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
-	background-repeat: no-repeat;
-}
 .ryu-ready, .ryu-throwing {
 	display: none;
 }
 .ryu-ready {
-	background-image: '../images/ryu-ready-position.gif';
+	background-image: url('../images/ryu-ready-position.gif');
 }
 .ryu-still {
-	background-image: '../images/ryu-standing-still.png';
+	background-image: url('../images/ryu-standing-still.png');
 }
 .ryu-throwing {
-	background-image: '../images/ryu-throwing-hadouken.png';
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+/* Hadouken Images and Animation */
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	float: left;
+	position: absolute;
+	z-index: 10;
+	display: none;
 }
