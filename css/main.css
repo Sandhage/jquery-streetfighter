@@ -10,6 +10,7 @@ body {
 	position: relative;
 	z-index: 1;
 	background-color: white;
+	overflow: auto;
 }
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
 	background-repeat: no-repeat;
@@ -19,6 +20,7 @@ body {
 .ryu {
 	width: 658px;
 	height: 494px;
+	float: left;
 }
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 658px;
@@ -55,5 +57,13 @@ body {
 
 /* Instructions and Text */
 .instructions {
-	position: absolute;
+	float: right;
+	display: block;
+	width: 300px;
+	padding-top: 60px;
+	padding-right: 100px;
+}
+.instructions li {
+	list-style: none;
+	padding-bottom: 40px;
 }
